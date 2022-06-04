@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: violet;
+ /* nomi */
+ /* davomiligi */
+    animation-name: anime;
+    /* kutish voqti */
+    animation-duration: 1s;
+    /* animation-delay: 3s; */
+
+    /* animatsiya soni */
+    /* animation-iteration-count: 4; */
+    /* ohirgi hossalarni sahlash */
+    /* animation-fill-mode: forwards; */
+    /* a-i-c --> qaytishga chipta */
+    animation-direction: alternate;
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes anime {
+    0%{
+        transform: translateX(0)
+
+    }
+    25%{
+
+        transform: translateX(500px)
+    }
+    50%{
+        transform: translateX(500px) translateY(500px)
+    }
+    75%{
+
+        transform: translateX(0px) translatey(500px)
+    }
+    100%{
+
+        transform: translateX(0)
+    }
+   
+}
+
+/* @keyframes anime {
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(500px);
+        border-radius: 50%;
+        background-color: gold;
+    }
+} */
